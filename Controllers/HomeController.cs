@@ -31,6 +31,9 @@ namespace dojodachi.Controllers
             ViewBag.energy = HttpContext.Session.GetInt32("Energy").Value;
             ViewBag.meals = HttpContext.Session.GetInt32("Meals").Value;
             ViewBag.alive = HttpContext.Session.GetInt32("Alive").Value;
+            if (HttpContext.Session.GetString("Last") != null){
+                ViewBag.last = HttpContext.Session.GetString("Last");
+            }
             if (ViewBag.happiness >= 100 && ViewBag.fullness >= 100 && ViewBag.energy >= 100)
             {
                 ViewBag.alive = 2;
@@ -71,6 +74,11 @@ namespace dojodachi.Controllers
                     if (satisfied != 1)
                     {
                         HttpContext.Session.SetInt32("Fullness", ((int)HttpContext.Session.GetInt32("Fullness") + eaten));
+                        HttpContext.Session.SetString("Last", "Your Dojodachi enjoyed that meal! Meals - 1, Fullness + " + eaten);
+                    }
+                    else
+                    {
+                        HttpContext.Session.SetString("Last", "Your Dojodachi thinks your cooking could improve.... Meals - 1, Fullness unchanged ");
                     }
                 }
                 if (dachiaction == "play")
@@ -87,6 +95,10 @@ namespace dojodachi.Controllers
                     if (satisfied != 1)
                     {
                         HttpContext.Session.SetInt32("Happiness", ((int)HttpContext.Session.GetInt32("Happiness") + happy));
+                        HttpContext.Session.SetString("Last", ("Your Dojodachi enjoyed playtime! Energy - 5, Happiness + " + happy));
+                    }
+                    else {
+                        HttpContext.Session.SetString("Last", "Your Dojodachi thinks you're boring...sorry.. Energy - 5, Happiness unchanged");
                     }
                 }
                 if (dachiaction == "work")
@@ -99,12 +111,16 @@ namespace dojodachi.Controllers
                     Random rnd = new Random();
                     int food = rnd.Next(1, 4);
                     HttpContext.Session.SetInt32("Meals", ((int)HttpContext.Session.GetInt32("Meals") + food));
+                    HttpContext.Session.SetString("Last", ("Your Dojodachi went to work, yet wonders why work is necessary when Dojodachi is a pet.. Energy - 5, Meals + " + food));
+
                 }
                 if (dachiaction == "sleep")
                 {
                     HttpContext.Session.SetInt32("Energy", ((int)HttpContext.Session.GetInt32("Energy") + 15));
                     HttpContext.Session.SetInt32("Happiness", ((int)HttpContext.Session.GetInt32("Happiness") - 5));
                     HttpContext.Session.SetInt32("Fullness", ((int)HttpContext.Session.GetInt32("Fullness") - 5));
+                    HttpContext.Session.SetString("Last", "Your Dojodachi wonders what you do while they sleep.. Energy + 15, Happiness - 5, Fullness - 5");
+
                 }
             }
             return RedirectToAction("Index");
