@@ -44,6 +44,11 @@ namespace dojodachi
             if (satisfied != 1)
             {
                 this.fullness = this.fullness + eaten;
+                System.Console.WriteLine("Your Dojodachi ate a meal! Fullness went up by " + eaten + "!");
+            }
+            else
+            {
+                System.Console.WriteLine("Your Dojodachi ate a meal but didn't enjoy it. Fullness didn't change.");
             }
             return true;
         }
@@ -62,6 +67,11 @@ namespace dojodachi
             if (satisfied != 1)
             {
                 this.happiness = this.happiness + happy;
+                System.Console.WriteLine("Your Dojodachi played! Happiness went up by " + happy + "!");
+            }
+            else
+            {
+                System.Console.WriteLine("Your Dojodachi played a game but didn't enjoy it. Happiness didn't change.");
             }
             return true;
         }
@@ -76,6 +86,7 @@ namespace dojodachi
             Random rnd = new Random();
             int food = rnd.Next(1, 4);
             this.meals = this.meals + food;
+            System.Console.WriteLine("Your Dojodachi went to work! Their energy went down by 5, but they earned " + food + " meals!");
             return true;
         }
 
@@ -84,19 +95,25 @@ namespace dojodachi
             this.energy = this.energy + 15;
             this.happiness = this.happiness - 5;
             this.fullness = this.fullness - 5;
+            System.Console.WriteLine("Your Dojodachi went to sleep. Their energy increased by 15, but their happiness and fullness decreased by 5 each.");
         }
 
-        public void Progress(){
-            if (this.energy == 100 && this.fullness == 100 && this.happiness == 100){
+        public void Progress()
+        {
+            if (this.energy == 100 && this.fullness == 100 && this.happiness == 100)
+            {
                 this.alive = 2;
+                System.Console.WriteLine("Congratulations, you won!");
             }
-            else if (this.fullness == 0 || this.happiness == 0){
+            else if (this.fullness == 0 || this.happiness == 0)
+            {
                 this.alive = 1;
+                System.Console.WriteLine("Your Dojodachi has passed away :(");
             }
             else
             {
                 this.alive = 0;
-        
+
             }
         }
     }

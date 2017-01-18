@@ -1,36 +1,66 @@
-@{
-    ViewData["Title"] = "Home Page";
-}
-<h1>Your Dojodachi!~</h1>
+@{ ViewBag.Title = "Dojodachi"; }
 
-    <body>
-        <div id="container">
-            <div class="boxes">
-                <h3>Feed</h3>
-                <form action="/Dojodachi" method="post">
-                    <input type="hidden" name="feed" value="feed" />
-                    <input type="submit" name="dachiaction" value="feed" />
-            </div>
-            <div class="boxes">
-                <h3>Play</h3>
-                    <input type="hidden" name="play" value="play" />
-                    <input type="submit" name="dachiaction" value="play" />
-                    
-            </div>
-            <div class="boxes">
-                <h3>Work</h3>
-                    <input type="hidden" name="work" value="work" />
-                    <input type="submit" name="dachiaction" value="work" />
-            </div>
-            <div class="boxes">
-                <h3>Sleep</h3>
-                    <input type="hidden" name="sleep" value="sleep" />
-                    <input type="submit" name="dachiaction" value="sleep" />
-                </form>
-            </div>
-            <!--<div id="bottom">
-                <button><a href="/refresh">Start Over</a></button>
+<body>
+    @{ if (@ViewBag.alive == 0) {
+    <div id="container">
+        <h1>Your Dojodachi</h1>
+        <p><img src="~/images/pika.png" alt="Dojodachi" height="200" width="200"></p>
+        <p>Fullness: @ViewBag.fullness - Happiness: @ViewBag.happiness - Meals: @ViewBag.meals - Energy: @ViewBag.energy</p>
+        <form action="/Dojodachi" method="post">
+            <input type="hidden" name="feed" value="feed" />
+            <input type="submit" name="dachiaction" value="feed" />
 
-            </div>-->
-        </div> <!--container-->
-    </body>
+            <input type="hidden" name="play" value="play" />
+            <input type="submit" name="dachiaction" value="play" />
+
+            <input type="hidden" name="work" value="work" />
+            <input type="submit" name="dachiaction" value="work" />
+
+            <input type="hidden" name="sleep" value="sleep" />
+            <input type="submit" name="dachiaction" value="sleep" />
+        </form>
+    </div>
+    } } @{ if (@ViewBag.alive == 1) {
+    <div id="container">
+        <h1>Your Dojodachi</h1>
+        <p><img src="~/images/dead.png" alt="Dojodachi" height="200" width="200"></p>
+        <p>Fullness: @ViewBag.fullness - Happiness: @ViewBag.happiness - Meals: @ViewBag.meals - Energy: @ViewBag.energy</p>
+        <p>Your Dojodachi died due to your ineptitude. RIP, Friend.</p>
+        <form action="/Dojodachi" method="post">
+            <input type="hidden" name="restart" value="restart" />
+            <input type="submit" name="dachiaction" value="restart" />
+        </form>
+    </div>
+    } } @{ if (@ViewBag.alive == 2) {
+    <div id="container">
+        <h1>Your Dojodachi</h1>
+        <p><img src="~/images/pikakiss.gif" alt="Dojodachi" height="140" width="250"></p>
+        <p>Fullness: @ViewBag.fullness - Happiness: @ViewBag.happiness - Meals: @ViewBag.meals - Energy: @ViewBag.energy</p>
+        <p>Your Dojodachi parenting is remarkable! Congratulations on your superior ability as a caretaker!</p>
+        <form action="/Dojodachi" method="post">
+            <input type="hidden" name="restart" value="restart" />
+            <input type="submit" name="dachiaction" value="restart" />
+        </form>
+    </div>
+    } }
+
+
+    <!--<div id="REALcontainer">
+        <h1>Your Dojodachi</h1>
+        <p><img src="~/images/pika.png" alt="Dojodachi" height="200" width="200"></p>
+        <p>Fullness: @ViewBag.fullness - Happiness: @ViewBag.happiness - Meals: @ViewBag.meals - Energy: @ViewBag.energy</p>
+        <form action="/Dojodachi" method="post">
+            <input type="hidden" name="feed" value="feed" />
+            <input type="submit" name="dachiaction" value="feed" />
+
+            <input type="hidden" name="play" value="play" />
+            <input type="submit" name="dachiaction" value="play" />
+
+            <input type="hidden" name="work" value="work" />
+            <input type="submit" name="dachiaction" value="work" />
+
+            <input type="hidden" name="sleep" value="sleep" />
+            <input type="submit" name="dachiaction" value="sleep" />
+        </form>-->
+    </div>
+</body>
