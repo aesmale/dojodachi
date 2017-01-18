@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Your Dojodachi!~</h1>
+
+    <body>
+        <div id="container">
+            <div class="boxes">
+                <h3>Feed</h3>
+                <form action="/Dojodachi" method="post">
+                    <input type="hidden" name="feed" value="feed" />
+                    <input type="submit" name="dachiaction" value="feed" />
+            </div>
+            <div class="boxes">
+                <h3>Play</h3>
+                    <input type="hidden" name="play" value="play" />
+                    <input type="submit" name="dachiaction" value="play" />
+                    
+            </div>
+            <div class="boxes">
+                <h3>Work</h3>
+                    <input type="hidden" name="work" value="work" />
+                    <input type="submit" name="dachiaction" value="work" />
+            </div>
+            <div class="boxes">
+                <h3>Sleep</h3>
+                    <input type="hidden" name="sleep" value="sleep" />
+                    <input type="submit" name="dachiaction" value="sleep" />
+                </form>
+            </div>
+            <!--<div id="bottom">
+                <button><a href="/refresh">Start Over</a></button>
+
+            </div>-->
+        </div> <!--container-->
+    </body>
