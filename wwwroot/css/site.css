@@ -1,1 +1,41 @@
-/*Write all of your CSS here*/
+body {
+    background-color: palevioletred;
+    font-family: arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Leckerli One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Leckerli One'), local('LeckerliOne-Regular'), url(https://fonts.gstatic.com/s/leckerlione/v7/S2Y_iLrItTu8kIJTkS7DrBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+#container {
+    width: 30%;
+    height: 380px;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid darkmagenta;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Leckerli One', Helvetica, sans-serif;
+}
+
+form {
+    vertical-align: top;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+
