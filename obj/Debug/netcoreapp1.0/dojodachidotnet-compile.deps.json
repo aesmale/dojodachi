@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0/",
-    "signature": "0fd858215ad7aa54490c18dab4297316acf34235"
+    "signature": "025ba27a58b529c6564682608012298b89a6badf"
   },
   "compilationOptions": {
     "defines": [
@@ -17,7 +17,7 @@
     ".NETCoreApp,Version=v1.0": {
       "dojodachi/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": "1.1.0",
+          "Microsoft.NETCore.App": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "1.0.0",
           "Microsoft.AspNetCore.StaticFiles": "1.0.0",
           "Microsoft.AspNetCore.Session": "1.0.0",
@@ -29,7 +29,7 @@
           "dojodachi.dll": {}
         }
       },
-      "Libuv/1.9.1": {
+      "Libuv/1.9.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1"
         }
@@ -486,7 +486,7 @@
       },
       "Microsoft.AspNetCore.Server.Kestrel/1.0.0": {
         "dependencies": {
-          "Libuv": "1.9.1",
+          "Libuv": "1.9.0",
           "Microsoft.AspNetCore.Hosting": "1.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
           "System.Buffers": "4.0.0",
@@ -933,14 +933,14 @@
           "lib/netstandard1.1/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Microsoft.NETCore.App/1.1.0": {
+      "Microsoft.NETCore.App/1.0.0": {
         "dependencies": {
-          "Libuv": "1.9.1",
+          "Libuv": "1.9.0",
           "Microsoft.CSharp": "4.0.1",
           "Microsoft.CodeAnalysis.CSharp": "1.3.0",
           "Microsoft.CodeAnalysis.VisualBasic": "1.3.0",
           "Microsoft.NETCore.DotNetHostPolicy": "1.0.1",
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.4",
+          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
           "Microsoft.VisualBasic": "10.0.1",
           "NETStandard.Library": "1.6.0",
           "System.Buffers": "4.0.0",
@@ -989,11 +989,11 @@
           "Microsoft.NETCore.DotNetHost": "1.0.1"
         }
       },
-      "Microsoft.NETCore.Jit/1.0.4": {},
+      "Microsoft.NETCore.Jit/1.0.2": {},
       "Microsoft.NETCore.Platforms/1.0.1": {},
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.4": {
+      "Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
         "dependencies": {
-          "Microsoft.NETCore.Jit": "1.0.4",
+          "Microsoft.NETCore.Jit": "1.0.2",
           "Microsoft.NETCore.Windows.ApiSets": "1.0.1"
         }
       },
@@ -2483,7 +2483,7 @@
     ".NETCoreApp,Version=v1.0/": {
       "dojodachi/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": "1.1.0",
+          "Microsoft.NETCore.App": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "1.0.0",
           "Microsoft.AspNetCore.StaticFiles": "1.0.0",
           "Microsoft.AspNetCore.Session": "1.0.0",
@@ -2495,7 +2495,7 @@
           "dojodachi.dll": {}
         }
       },
-      "Libuv/1.9.1": {
+      "Libuv/1.9.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1"
         }
@@ -2952,7 +2952,7 @@
       },
       "Microsoft.AspNetCore.Server.Kestrel/1.0.0": {
         "dependencies": {
-          "Libuv": "1.9.1",
+          "Libuv": "1.9.0",
           "Microsoft.AspNetCore.Hosting": "1.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
           "System.Buffers": "4.0.0",
@@ -3399,14 +3399,14 @@
           "lib/netstandard1.1/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Microsoft.NETCore.App/1.1.0": {
+      "Microsoft.NETCore.App/1.0.0": {
         "dependencies": {
-          "Libuv": "1.9.1",
+          "Libuv": "1.9.0",
           "Microsoft.CSharp": "4.0.1",
           "Microsoft.CodeAnalysis.CSharp": "1.3.0",
           "Microsoft.CodeAnalysis.VisualBasic": "1.3.0",
           "Microsoft.NETCore.DotNetHostPolicy": "1.0.1",
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.4",
+          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
           "Microsoft.VisualBasic": "10.0.1",
           "NETStandard.Library": "1.6.0",
           "System.Buffers": "4.0.0",
@@ -3455,11 +3455,11 @@
           "Microsoft.NETCore.DotNetHost": "1.0.1"
         }
       },
-      "Microsoft.NETCore.Jit/1.0.4": {},
+      "Microsoft.NETCore.Jit/1.0.2": {},
       "Microsoft.NETCore.Platforms/1.0.1": {},
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.4": {
+      "Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
         "dependencies": {
-          "Microsoft.NETCore.Jit": "1.0.4",
+          "Microsoft.NETCore.Jit": "1.0.2",
           "Microsoft.NETCore.Windows.ApiSets": "1.0.1"
         }
       },
@@ -4836,10 +4836,10 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Libuv/1.9.1": {
+    "Libuv/1.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OxpQFoHQpoxSnLl5RRH+b/hmdIPA9VK74Jf3V5z/k2PFRiI8wntWOuRoi97R5G/qFPh2rZSTnqQUYpvfbQ8hFA=="
+      "sha512": "sha512-9Q7AaqtQhS8JDSIvRBt6ODSLWDBI4c8YxNxyCQemWebBFUtBbc6M5Vi5Gz1ZyIUlTW3rZK9bIr5gnVyv0z7a2Q=="
     },
     "Microsoft.AspNetCore.Antiforgery/1.0.0": {
       "type": "package",
@@ -5181,10 +5181,10 @@
       "serviceable": true,
       "sha512": "sha512-1lr92itF1fKR2oEQ6gk1IUsuCgp7UMlf/b1sjlAyuDeUnttj39ra59GQHYpomglJX1UVNpi1/cSBbEsXoNeIhw=="
     },
-    "Microsoft.NETCore.App/1.1.0": {
+    "Microsoft.NETCore.App/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4Y+rqLB/VI4itrAxDylv98VHRM6RY1dghUqG9+JgDZSktmCIoC709eMTNI/SJ3AajjgIXclogocjoY3uCo1vGA=="
+      "sha512": "sha512-Bv40dLDrT+Igcg1e6otW3D8voeJCfcAxOlsxSVlDz+J+cdWls5kblZvPHHvx7gX3/oJoQVIkEeO3sMyv5PSVJA=="
     },
     "Microsoft.NETCore.DotNetHost/1.0.1": {
       "type": "package",
@@ -5201,20 +5201,20 @@
       "serviceable": true,
       "sha512": "sha512-GEXgpAHB9E0OhfcmNJ664Xcd2bJkz2qkGIAFmCgEI5ANlQy4qEEmBVfUqA+Z9HB85ZwWxZc1eIJ6fxdxcjrctg=="
     },
-    "Microsoft.NETCore.Jit/1.0.4": {
+    "Microsoft.NETCore.Jit/1.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-s336ryZlopR+pQ4VfKlILX1LxiQzpCPnmiGot0p5aFPeCjwmKtHC88MI8jXdvdGPySON9i1bPUKJP8jiiPIAjA=="
+      "sha512": "sha512-Ok2vWofa6X8WD9vc4pfLHwvJz1/B6t3gOAoZcjrjrQf7lQOlNIuZIZtLn3wnWX28DuQGpPJkRlBxFj7Z5txNqw=="
     },
     "Microsoft.NETCore.Platforms/1.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-lWxzLoSTaOPHQtcPFMEuO0x4i7igCJzl9yjhWif3wm5W6T2+QodeOG6TI9gxpY2WktkQWufyvvwPRZB6wRO0kQ=="
     },
-    "Microsoft.NETCore.Runtime.CoreCLR/1.0.4": {
+    "Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NTd+F7MQJi5wFh6Hq3uVH0L3om+pVcfF+bpw0hSd+Ka92QSZ4IfDJw/IWqTQ9jUtLyWYR4XR+52HD5HW+a+zoQ=="
+      "sha512": "sha512-A0x1xtTjYJWZr2DRzgfCOXgB0JkQg8twnmtTJ79wFje+IihlLbXtx6Z2AxyVokBM5ruwTedR6YdCmHk39QJdtQ=="
     },
     "Microsoft.NETCore.Targets/1.0.1": {
       "type": "package",
